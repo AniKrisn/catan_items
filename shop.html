@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buildings Overview</title>
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 20px;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .collapsible {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+            background-color: #f1f1f1;
+        }
+        .content {
+            padding: 0 10px;
+            display: none;
+            border-left: 1px solid #ccc;
+            margin-left: 20px;
+        }
+        .building {
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .building-details {
+            padding: 5px 10px;
+            display: none;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+            background-color: #e9e9e9;
+        }
+    </style>
+</head>
+<body>
+
+<h3><a href="index.html">Home</a></h3>
+
+<h1>Merchant</h1>
+
+<div class="collapsible">Wares</div>
+<div class="content">
+    <div class="building"> Buffs/Curses (all global) <br>
+        <div class="building-details">
+            All 5 gold: <br> <br>
+            • Increased probability of more resources (50%) <br>
+            • Make movement 2 jumps / make movement 1 jump <br>
+            • Make double counter 3x resource collection / prevent double counter (1x rather than 2x) <br>
+            • Buildings started in the next 5 turns take 0.5x long to make /  2x longer to make <br>
+        </div>
+    </div>
+    <div>
+
+    <div class="building"> Items <br>
+        <div class="building-details">
+            • Buy Secondary items (1 gold + 2 any primary + 1 any secondary): <br> <br>
+            Flux / Emulsion / Charcoal / Pickled Wood / Resin <br> <br>
+            • Buy Tertiary items (1 gold + 4 any primary + 1 any secondary): <br> <br>
+            Weather-Resistant Lumber / Metal-Infused Polymer / Advanced Drilling Compound <br> <br>
+        </div>
+    </div>
+
+    <div class="building"> Sell <br>
+        <div class="building-details">
+            • 1 fish -> 1 gold <br>
+            • 3 primary resource (any) -> 1 gold
+        </div>
+    </div>
+</div>
+</div>
+
+
+<h1>Architect</h1>
+
+<div class="collapsible">Buildings</div>
+<div class="content">
+    <div class="building">Oil Refinery (2 pts) - 1 turn to make
+        <div class="building-details">
+            <i>Description: Refines oil into various industrial fuels and products.</i><br> <br>
+            <b><u>Ingredients: </u></b><br>
+            • 2x Gold <br>
+            • 2x Advanced Drilling Compound <br>
+            • Oil <br>
+            • Ore <br>
+        </div>
+    </div>
+    <div class="building">Paper Mill (2 pts) - 2 turns to make
+        <div class="building-details">
+            <i>Description: Produces specialized types of paper for various industrial uses.</i><br> <br>
+            <b><u>Ingredients: </u></b><br>
+            • 2x Gold <br>
+            • Preserved Wood <br>
+            • Pulp <br>
+            • Salt Paper <br>
+        </div>
+    </div>
+    <div class="building">Artisan Workshop (3 pts) - 2 turns to make
+        <div class="building-details">
+            <i>Description: Crafts custom furniture and art pieces using high-quality materials.</i><br> <br>
+            <b><u>Ingredients: </u></b><br>
+            • 2x Gold <br>
+            • 2x Resin <br>
+            • 2x Charcoal <br>
+            • Weather-Resistant Lumber <br>
+        </div>
+    </div>
+    <div class="building">Greenhouse Facility (3 pts) - 2 turns to make
+        <div class="building-details">
+            <i>Description: Grows plants in a controlled environment using sustainable materials.</i><br> <br>
+            <b><u>Ingredients: </u></b><br>
+            • 2x Gold <br>
+            • Weather-Resistant Lumber <br>
+            • Resin <br>
+            • Water <br>
+            • Soap <br>
+            • Pickled Wood <br>
+        </div>
+    </div>
+    <div class="building">Soap Manufacturing Facility (3 pts) - 2 turns to make
+        <div class="building-details">
+            <i>Description: Produces various types of eco-friendly soaps and cleaning products.</i><br> <br>
+            <b><u>Ingredients: </u></b><br>
+            • 2x Gold <br>
+            • 3x Soap <br>
+            • Water <br>
+            • Wood <br>
+            • Charcoal <br>
+            • Electrolyte Solution <br>
+        </div>
+    </div>
+    <div class="building">Desalination Plant (4 pts) - 3 turns to make
+        <div class="building-details">
+            <i>Description: Converts seawater into fresh water and produces salt as a byproduct.</i><br> <br>
+            <b><u>Ingredients: </u></b><br>
+            • 2x Gold <br>
+            • 2x Brine <br>
+            • 4x Water <br>
+            • 5x Ore <br>
+        </div>
+    </div>
+    <div class="building">Flux Processing Unit (4 pts) - 3 turns to make
+        <div class="building-details">
+            <i>Description: Processes materials for metalworking and welding applications.</i><br> <br>
+            <b><u>Ingredients: </u></b><br>
+            • 2x Gold <br>
+            • 2x Flux <br>
+            • Stone <br>
+            • Oil <br>
+            • Drilling Mud <br>
+            • Smelting Mixture <br>
+            • Metal-Infused Polymer <br>
+        </div>
+    </div>
+    <div class="building">Metal-Infusion Factory (4 pts) - 3 turns to make
+        <div class="building-details">
+            <i>Description: Creates advanced metal-polymer materials for industrial applications.</i><br> <br>
+            <b><u>Ingredients: </u></b><br>
+            • 2x Gold <br>
+            • 3x Metal-Infused Polymer <br>
+            • 3x Charcoal <br>
+            • 2x Ore <br>
+        </div>
+    </div>
+    <div class="building">Fluid Dynamics Lab (5 pts) - 4 turns to make
+        <div class="building-details">
+            <i>Description: Studies fluid flow and develops new fluid-related technologies.</i><br> <br>
+            <b><u>Ingredients: </u></b><br>
+            • 2x Gold <br>
+            • 2x Hydraulic Cement <br>
+            • 2x Lubricant <br>
+            • 2x Metal-Infused Polymer <br>
+        </div>
+    </div>
+    <div class="building">Advanced Materials Research Lab (8 pts) - 6 turns to make
+        <div class="building-details">
+            <i>Description: Researches and develops new composite materials for various applications.</i><br> <br>
+            <b><u>Ingredients: </u></b><br>
+            • 2x Gold <br>
+            • 2x Metal-Infused Polymer <br>
+            • Hydraulic Cement <br>
+            • Resin <br>
+            • Nanoparticle Suspension <br>
+            • Advanced Drilling Compound <br>
+            • Water <br>
+            • Wood <br>
+        </div>
+    </div>
+</div>
+
+<script>
+    const collapsibles = document.getElementsByClassName("collapsible");
+    for (let i = 0; i < collapsibles.length; i++) {
+        collapsibles[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            const content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+
+    const buildings = document.querySelectorAll('.building');
+    buildings.forEach(building => {
+        building.addEventListener('click', function () {
+            const details = this.querySelector('.building-details');
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
