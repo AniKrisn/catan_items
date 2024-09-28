@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Item Combination Tree</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: space-between;
+    }
+    #input-section {
+      width: 50%;
+    }
+    #item-details {
+      display: none;
+      margin-top: 20px;
+    }
+    .autocomplete-items {
+      border: 1px solid #d4d4d4;
+      border-bottom: none;
+      border-top: none;
+      z-index: 99;
+      position: absolute;
+      background-color: #fff;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+    .autocomplete-items div {
+      padding: 10px;
+      cursor: pointer;
+    }
+    .autocomplete-items .autocomplete-active {
+      background-color: DodgerBlue;
+      color: #fff;
+    }
+    #tree-section {
+      width: 40%;
+    }
+    .collapsible {
+      cursor: pointer;
+      padding: 10px;
+      border: none;
+      text-align: left;
+      background-color: #f1f1f1;
+      font-size: 16px;
+      width: 100%;
+    }
+    .content {
+      display: none;
+      padding: 0 18px;
+      overflow: hidden;
+      background-color: #f9f9f9;
+    }
+    .content ul {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="input-section">
+  <h2>Item Combination Search</h2>
+  <label for="item-input">Type an item name:</label>
+  <input id="item-input" type="text" placeholder="Enter item..." style="width: 100%; padding: 8px;">
+  
+  <div id="item-details">
+    <h3 id="item-name"></h3>
+    <div>
+      <strong>What it can be used to make:</strong>
+      <ul id="combinations-list"></ul>
+    </div>
+    <div>
+      <strong>What it's made from:</strong>
+      <ul id="components-list"></ul>
+    </div>
+  </div>
+</div>
+
+<div id="tree-section">
+  <h2>Item Tree</h2>
+  <button type="button" class="collapsible">Primary Items</button>
+  <div class="content">
+    <ul id="primary-list"></ul>
+  </div>
+  
+  <button type="button" class="collapsible">Secondary Items</button>
+  <div class="content">
+    <ul id="secondary-list"></ul>
+  </div>
+  
+  <button type="button" class="collapsible">Tertiary Items</button>
+  <div class="content">
+    <ul id="tertiary-list"></ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
