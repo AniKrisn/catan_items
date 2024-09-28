@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Round</title>
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h3><a href="index.html">Home</a></h3>
+
+    <h1>Start Round</h1>
+    <button id="generateButton">Go!</button>
+    <div id="result"></div>
+
+    <script>
+        function generateRandomNumbers() {
+            const randomNums = new Set(); // Use a Set to ensure uniqueness
+            while (randomNums.size < 3) {
+                const num = Math.floor(Math.random() * 9) + 1; // Generates a number between 1 and 9
+                randomNums.add(num); // Add to set
+            }
+            const uniqueRandomNums = Array.from(randomNums); // Convert the Set back to an Array
+            const randomWeightedNum = getWeightedRandomNumber();
+
+            return {
+                randomNums: uniqueRandomNums,
+                weightedNum: randomWeightedNum
+            };
+        }
+
+        function getWeightedRandomNumber() {
+            const rand = Math.random();
+
+            if (rand < 0.78) {
+                return 1; // 85% chance
+            } else if (rand < 0.88) {
+                return 2; // 10% chance
+            } else if (rand < 0.97) {
+                return 3; // 4% chance
+            } else {
+                return 4; // 1% chance
+            }
+        }
+
+        document.getElementById("generateButton").addEventListener("click", function() {
+            const result = generateRandomNumbers();
+            document.getElementById("result").innerHTML = 
+                `Resource nums: ${result.randomNums.join(", ")}<br>` +
+                `Yield: ${result.weightedNum}`;
+        });
+    </script>
+</body>
+</html>
