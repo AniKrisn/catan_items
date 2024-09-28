@@ -16,12 +16,10 @@ const tree = {
       "Resin": { "combination": ["Wood", "Oil"] },
       "Flux": { "combination": ["Ore", "Salt"] },
       "Lubricant": { "combination": ["Ore", "Oil"] },
-      "Soap": { "combination": ["Salt", "Oil"] }
-    },
-    "Triplet Items": {
+      "Soap": { "combination": ["Salt", "Oil"] },
       "Composite Material": { "combination": ["Water", "Wood", "Ore"] },
       "Pickled Wood": { "combination": ["Water", "Wood", "Salt"] },
-      "Water-resistant Coating": { "combination": ["Water", "Wood", "Oil"] },
+      "Water-Resistant Coating": { "combination": ["Water", "Wood", "Oil"] },
       "Electrolyte Solution": { "combination": ["Water", "Ore", "Salt"] },
       "Drilling Mud": { "combination": ["Water", "Ore", "Oil"] },
       "Hydraulic Fluid": { "combination": ["Water", "Salt", "Oil"] },
